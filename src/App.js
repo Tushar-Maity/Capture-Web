@@ -1,11 +1,13 @@
 import React from 'react';
-import './App.css';
+//Global Style
+import GlobalStyle from './components/GlobalStyle';
 //Importing pages
 import AboutUs from './pages/AboutUs';
 
 const App = () => {
   return (
     <div className="App">
+      <GlobalStyle />
       <AboutUs />
     </div>
   );
