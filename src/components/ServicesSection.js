@@ -1,15 +1,18 @@
 import React from 'react';
+
+import { About, Description, Image, Hide } from '../styles';
+import styled from 'styled-components';
 //Importing icons and images
 import clock from "../img/clock.svg";
 import diaphragm from "../img/diaphragm.svg";
 import money from "../img/money.svg";
 import teamwork from "../img/teamwork.svg";
 import home2 from "../img/home2.png";
-
+    
 const ServicesSection = () => {
     return (
-        <div className="services">
-            <div className="description">
+        <Services>
+            <Description>
                 <h2>High <span>quality</span> services</h2>
                 <div className="cards">
                     <div className="card">
@@ -41,12 +44,16 @@ const ServicesSection = () => {
                         <p>lorem dolor sit amet.</p>
                     </div>
                 </div>
-                <div className="image"> 
-                    <img src={home2} alt=""/>
-                </div>
-            </div>
-        </div>
+            </Description>
+            <Image> 
+                <img src={home2} alt=""/>
+            </Image>
+        </Services>
     )
 }
+
+const Services = styled(About)`
+
+`;
 
 export default ServicesSection
