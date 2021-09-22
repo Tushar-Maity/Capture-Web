@@ -64,8 +64,15 @@ const Services = styled(About)`
 `;
 
 const Cards = styled.div`
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
 `;
 
 const Card = styled.div`
