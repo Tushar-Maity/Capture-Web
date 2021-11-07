@@ -11,7 +11,7 @@ import { Switch, Route } from 'react-router-dom';
 
 const App = () => {
   return (
-    <div className="App">
+    <React.Fragment>
       <GlobalStyle />
       <Nav />
       <Switch>
@@ -25,7 +25,7 @@ const App = () => {
           <ContactUs />
         </Route>
       </Switch>
-    </div>
+    </React.Fragment>
   );
 }
 
